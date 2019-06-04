@@ -64,12 +64,12 @@
  **Content example**    
  ```json 
 {  
-      id: 728, 
-      receiver: '0xab5ba34351cd3d0bae440998d5837347e6525e9a', 
-      start: 7891522, 
-      end: 9421522, 
-      status: 0, 
-      network: 'main' 
+    id: 728, 
+    receiver: "0xab5ba34351cd3d0bae440998d5837347e6525e9a", 
+    start: 7891522, 
+    end: 9421522, 
+    status: 0, 
+    network: "main"
 } 
  ```
  
