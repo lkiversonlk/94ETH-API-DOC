@@ -24,8 +24,10 @@ Use AccountId, Key and Secret to encrypt API request
 
 **Example**: `https://www.94eth.com/api/api/gen_order?token=0x255Aa6DF07540Cb5d3d297f0D0D4D84cb52bc8e6&amount=400000000&sender=0xc713Ad7305Ec2EB9d8D7654190ac359293A22968&secret=test1&account=1&timestamp=1559622161&key=fedd9a91-3bc3-44b1-85f6-d4d315acac28&encrypt=027a1dea4ea1f066662f526d15a9a674&uniq=8074`
 
-### Notes
-for example, call `https://www.94eth.com/api/api/gen_order`
+### Steps
+
+for example, try to call `https://www.94eth.com/api/api/gen_order`
+
 1. The host is https://www.94eth.com/api
 2.  The **path** to encrypt is /api/gen_order   **prev /api excluded**
 3. The query parameter required by Auth is:
@@ -43,4 +45,5 @@ for example, call `https://www.94eth.com/api/api/gen_order`
 
 7. Replace the [encrypt] in the `Auth Parameters` with **encrypted data**
 
-8. Now you can call the API.
+8. Now you can call the API by
+   `https://www.94eth.com/api/api/gen_order?token=0x255Aa6DF07540Cb5d3d297f0D0D4D84cb52bc8e6&amount=400000000&sender=0xc713Ad7305Ec2EB9d8D7654190ac359293A22968&secret=test1&account=1&timestamp=1559626144&key=fedd9a91-3bc3-44b1-85f6-d4d315acac28&encrypt=0670777ca4d02806f24df310a138c71a&uniq=6502`
