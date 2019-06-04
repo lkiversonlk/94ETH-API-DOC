@@ -43,8 +43,10 @@
  
  **Content example**    
  ```json 
- { 
- } 
+[
+    "0xab5ba34351cd3d0bae440998d5837347e6525e9a",
+    "0x0fe2a50a6f6fb1859520e7a6e8665149d93d20e2"
+]
  ``` 
 
 ### Notes    
@@ -88,10 +90,8 @@
 * the urls will not be guaranteed to be called (usually it will be called), not be guaranteed to be called only once.   
 
 * successful order creation will return the order **id**,  then you can lead the user to page 
-
    * EN https://www.94eth.com/api/orderen/?o=[id]&r=[r]
-   * ZH https://www.94eth.com/api/ordercn/?o=[id]&r=[r]
-   
+   * ZH https://www.94eth.com/api/orderen/?o=[id]&r=[r]
    in which **id** is the order id, **r** is the redirect page when order finished (make sure the **encodeURIComponent** the url)
    
 * YOU MUST CALL **ORDER STATUS** TO MAKE SURE The order is finished, only just by the notifying url  
