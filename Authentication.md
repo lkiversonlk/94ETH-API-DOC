@@ -30,7 +30,7 @@ for example, try to call `https://www.94eth.com/api/api/gen_order`
 
 1. The host is https://www.94eth.com/api
 
-2.  The **path** to encrypt is `/api/gen_order`   <em>prev /api excluded</em>
+2.  The **path** to encrypt is `/api/gen_order`   <em>prev '/api' excluded</em>
 
 3. The query parameter required by Auth is:
 	* account: `accoun id`
