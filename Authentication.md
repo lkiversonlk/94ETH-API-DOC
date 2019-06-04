@@ -41,9 +41,11 @@ for example, try to call `https://www.94eth.com/api/api/gen_order`
 	
 4.  Append the auth parameters to the parameters that required by the API itself (sequence doesn't matter)
 
-5. The original content to encrypted it **[path][queries]**:
-        example: 
-        `/api/gen_ordertoken=0x255Aa6DF07540Cb5d3d297f0D0D4D84cb52bc8e6&amount=400000000&sender=0xc713Ad7305Ec2EB9d8D7654190ac359293A22968&secret=test1&account=1&timestamp=1559626144&key=fedd9a91-3bc3-44b1-85f6-d4d315acac28&encrypt=[secret]&uniq=6502`
+5. The original content to encrypted is **[path][queries]**:
+
+   For this Example:
+    
+   `/api/gen_ordertoken=0x255Aa6DF07540Cb5d3d297f0D0D4D84cb52bc8e6&amount=400000000&sender=0xc713Ad7305Ec2EB9d8D7654190ac359293A22968&secret=test1&account=1&timestamp=1559626144&key=fedd9a91-3bc3-44b1-85f6-d4d315acac28&encrypt=[secret]&uniq=6502`
 
 6. **MD5(original content)** to get encrypted data: `027a1dea4ea1f066662f526d15a9a674`
 
