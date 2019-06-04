@@ -41,7 +41,7 @@ for example, try to call `https://www.94eth.com/api/api/gen_order`
 	
 4.  Append the auth parameters to the parameters that required by the API itself (sequence doesn't matter)
 
-5. The original content to encrypted is **[path][queries]** (no ending '/' in the **path**):
+5. The **original content** to encrypted is **[path][queries]** (no ending '/' in the **path**):
 
    For this Example:
     
