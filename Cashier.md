@@ -88,8 +88,10 @@
 * the urls will not be guaranteed to be called (usually it will be called), not be guaranteed to be called only once.   
 
 * successful order creation will return the order **id**,  then you can lead the user to page 
+
    * EN https://www.94eth.com/api/orderen/?o=[id]&r=[r]
    * ZH https://www.94eth.com/api/orderen/?o=[id]&r=[r]
+   
    in which **id** is the order id, **r** is the redirect page when order finished (make sure the **encodeURIComponent** the url)
    
 * YOU MUST CALL **ORDER STATUS** TO MAKE SURE The order is finished, only just by the notifying url  
