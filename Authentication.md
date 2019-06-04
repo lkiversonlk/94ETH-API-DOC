@@ -33,7 +33,7 @@ for example, try to call `https://www.94eth.com/api/api/gen_order`
 2.  The **path** to encrypt is `/api/gen_order`   <em>prev '/api' excluded</em>
 
 3. The query parameter required by Auth is:
-	* account: `accoun id`
+	* account: `account id`
 	* timestamp: `currrent UTC timestamp`
 	* key: `the public key`
 	* encrypt: `fill in the secret at first`
