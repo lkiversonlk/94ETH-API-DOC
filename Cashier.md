@@ -64,23 +64,34 @@
  **Content example**    
  ```json 
 {  
-    id: 728, 
-    receiver: "0xab5ba34351cd3d0bae440998d5837347e6525e9a", 
-    start: 7891522, 
-    end: 9421522, 
-    status: 0, 
-    network: "main"
+    "id": 728, 
+    "receiver": "0xab5ba34351cd3d0bae440998d5837347e6525e9a", 
+    "start": 7891522, 
+    "end": 9421522, 
+    "status": 0, 
+    "network": "main"
 } 
  ```
  
 ### Notes 
 
 * token : `the token you want to receive`  
+
 * sender: `the sender address who will pay the order`  
+
 * amount: `the amount of token in this order including the decimals, so it should be 10000 if the order is only 1 token and the decimals is 4`  
+
 * secret: `any thing you want to mark this order`  
+
 * urls: `a list of urls that need to be notified when the order is finished, use serialized json array format  and url encoded it`  
+
 * the urls will not be guaranteed to be called (usually it will be called), not be guaranteed to be called only once.   
+
+* successful order creation will return the order **id**,  then you can lead the user to page 
+   * EN https://www.94eth.com/api/orderen/?o=[id]&r=[r]
+   * ZH https://www.94eth.com/api/orderen/?o=[id]&r=[r]
+   in which **id** is the order id, **r** is the redirect page when order finished (make sure the **encodeURIComponent** the url)
+   
 * YOU MUST CALL **ORDER STATUS** TO MAKE SURE The order is finished, only just by the notifying url  
   
 ## 4. Order Info get the creation info of specified order    
