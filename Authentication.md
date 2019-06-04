@@ -39,7 +39,7 @@ for example, try to call `https://www.94eth.com/api/api/gen_order`
 	* encrypt: `fill in the secret at first`
 	* uniq: `an uniq number that should repeat in api calls within 10 minutes`
 	
-4.  Append the auth parameters to the parameters that required by the API itself
+4.  Append the auth parameters to the parameters that required by the API itself (sequence doesn't matter)
 
 5. The original content to encrypted it **[path][queries]**:
         example: 
